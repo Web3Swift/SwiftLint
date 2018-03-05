@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="swiftlint" type="AppleRunConfiguration" factoryName="Application" PROGRAM_PARAMS="lint --no-cache" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SwiftLint" TARGET_NAME="swiftlint" CONFIG_NAME="Debug" SCHEME_NAME="swiftlint" RUN_TARGET_PROJECT_NAME="SwiftLint" RUN_TARGET_NAME="swiftlint" MAKE_ACTIVE="TRUE">
+    <envs>
+      <env name="DEVELOPER_DIR" value="${DEVELOPER_DIR}" />
+      <env name="TOOLCHAINS" value="${TOOLCHAINS}" />
+    </envs>
+    <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+      <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+    </EXTENSION>
+    <method />
+  </configuration>
+</component>
