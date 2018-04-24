@@ -43,7 +43,9 @@
 * [Force Cast](#force-cast)
 * [Force Try](#force-try)
 * [Force Unwrapping](#force-unwrapping)
+* [Function Body Comments](#function-body-comments)
 * [Function Body Length](#function-body-length)
+* [Function Body Whitespace Lines](#function-body-whitespace-lines)
 * [Function Parameter Count](#function-parameter-count)
 * [Generic Type Name](#generic-type-name)
 * [Identifier Name](#identifier-name)
@@ -102,6 +104,7 @@
 * [Sorted Imports](#sorted-imports)
 * [Statement Position](#statement-position)
 * [Strict fileprivate](#strict-fileprivate)
+* [Subclass](#subclass)
 * [Superfluous Disable Command](#superfluous-disable-command)
 * [Switch and Case Statement Alignment](#switch-and-case-statement-alignment)
 * [Switch Case on Newline](#switch-case-on-newline)
@@ -6428,6 +6431,16 @@ open var computed: String { return foo.bar↓! }
 
 
 
+## Function Body Comments
+
+Identifier | Enabled by default | Supports autocorrection | Kind 
+--- | --- | --- | ---
+`function_body_comments` | Disabled | No | style
+
+Functions bodies should not have comments.
+
+
+
 ## Function Body Length
 
 Identifier | Enabled by default | Supports autocorrection | Kind 
@@ -6435,6 +6448,16 @@ Identifier | Enabled by default | Supports autocorrection | Kind
 `function_body_length` | Enabled | No | metrics
 
 Functions bodies should not span too many lines.
+
+
+
+## Function Body Whitespace Lines
+
+Identifier | Enabled by default | Supports autocorrection | Kind 
+--- | --- | --- | ---
+`function_body_whitespace_lines` | Disabled | No | style
+
+Function bodies should not have whitespace lines.
 
 
 
@@ -13218,6 +13241,16 @@ struct Inter {
 ```
 
 </details>
+
+
+
+## Subclass
+
+Identifier | Enabled by default | Supports autocorrection | Kind 
+--- | --- | --- | ---
+`subclass` | Disabled | No | style
+
+Subclassing is prohibited.
 
 
 

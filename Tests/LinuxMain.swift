@@ -201,11 +201,30 @@ extension FileLengthRuleTests {
     ]
 }
 
+extension FunctionBodyCommentsRuleTests {
+    static var allTests: [(String, (FunctionBodyCommentsRuleTests) -> () throws -> Void)] = [
+        ("testFunctionBodyCommentsValid", testFunctionBodyCommentsValid),
+        ("testFunctionBodyCommentsInLine", testFunctionBodyCommentsInLine),
+        ("testFunctionBodyCommentsMultiLine", testFunctionBodyCommentsMultiLine)
+    ]
+}
+
 extension FunctionBodyLengthRuleTests {
     static var allTests: [(String, (FunctionBodyLengthRuleTests) -> () throws -> Void)] = [
         ("testFunctionBodyLengths", testFunctionBodyLengths),
         ("testFunctionBodyLengthsWithComments", testFunctionBodyLengthsWithComments),
         ("testFunctionBodyLengthsWithMultilineComments", testFunctionBodyLengthsWithMultilineComments)
+    ]
+}
+
+extension FunctionBodyWhitespaceLinesRuleTests {
+    static var allTests: [(String, (FunctionBodyWhitespaceLinesRuleTests) -> () throws -> Void)] = [
+        ("testFunctionBodyWhitespaceCommentLinesWithComment",
+                testFunctionBodyWhitespaceCommentLinesWithComment),
+        ("testFunctionBodyWhitespaceCommentLinesWithMultiLineComment",
+                testFunctionBodyWhitespaceCommentLinesWithMultiLineComment),
+        ("testFunctionBodyWhitespaceCommentLinesValid",
+                testFunctionBodyWhitespaceCommentLinesValid)
     ]
 }
 
@@ -525,6 +544,14 @@ extension RulesTests {
         ("testWeakDelegate", testWeakDelegate),
         ("testXCTFailMessage", testXCTFailMessage),
         ("testYodaCondition", testYodaCondition)
+    ]
+}
+
+extension SubClassRuleTests {
+    static var allTests: [(String, (SubClassRuleTests) -> () throws -> Void)] = [
+        ("testSubClassRuleSuperDot", testSubClassRuleSuperDot),
+        ("testSubClassRuleSuper", testSubClassRuleSuper),
+        ("testSubClassRuleTestsValid", testSubClassRuleTestsValid)
     ]
 }
 
